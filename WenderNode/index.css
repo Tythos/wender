@@ -1,0 +1,37 @@
+.WenderRoot {
+    border: 1px solid rgba(228, 115, 115, 1.0);
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+}
+
+.WenderLeaf {
+    border: 1px solid rgba(207, 125, 70, 1.0);
+    background-color: rgb(207, 125, 70);
+    cursor: pointer;
+}
+
+.WenderTB {
+    border: 1px solid rgba(83, 83, 241, 1.0);
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 8px;
+    cursor: ns-resize;
+}
+
+.WenderLR {
+    border: 1px solid rgba(85, 170, 85, 1.0);
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    cursor: ew-resize;
+}
+
+.WenderBoundaryH {
+    grid-row: 1 / span 1;
+    height: 16px;
+}
+
+.WenderBoundaryV {
+    grid-column: 1 / span 1;
+    width: 16px;
+}
